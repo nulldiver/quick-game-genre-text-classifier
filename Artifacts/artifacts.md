@@ -1,1 +1,1 @@
-After running, this folder should contain vectorizer and classifier files.
+After running, this folder should contain vectorizer and classifier pipeline.

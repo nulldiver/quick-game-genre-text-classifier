@@ -3,5 +3,18 @@ This is just a really quick classifier to look at n-grams in a game's descriptio
 
 - Useful as a text pre-processing step to filter out irrelevant text from game descriptions when you want something more comprehensive than stop words.
 - Also a straightforward example of building a little binary classifier with limited data.
-- Data in genre-related.txt and non-genre-related.txt was synthesized with chat-gpt. If you make changes, run `python pre-process-n-grams.py` to ensure that entries are formatted correctly.
-- Run `python train-classifier.py` -- I've not included the pickled output because you really shouldn't be running stuff that you didn't pickle yourself.
+- Run `python train_classifier.py` -- I've not included the pickled output because you really shouldn't be running stuff that you didn't pickle yourself.
+
+Results:
+
+
+                   precision    recall  f1-score   support
+                   
+not-genre-related       0.95      0.95      0.95        93
+    genre-related       0.93      0.93      0.93        75
+
+         accuracy                           0.94       168
+        macro avg       0.94      0.94      0.94       168
+     weighted avg       0.94      0.94      0.94       168
+     
+
