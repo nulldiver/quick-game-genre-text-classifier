@@ -1,7 +1,7 @@
 # game genre-related n-gram classifier
 This is just a really quick classifier to look at n-grams in a game's description and determine if they are likely or unlikely to be relevant for game genre determination. 
 
-- Really just a simple TfidfVectorizer and LogisticRegression with GridSearchCV
+- Really just a simple TfidfVectorizer and LogisticRegression pipeline with GridSearchCV
 - Useful as a text pre-processing step to filter out irrelevant text from game descriptions when you want something more comprehensive than stop words.
 - Also a straightforward example of building a little binary classifier with limited data.
 - Run `python train_classifier.py` -- I've not included the pickled output because you really shouldn't be running stuff that you didn't pickle yourself.
